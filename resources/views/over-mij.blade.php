@@ -18,7 +18,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/verhalen">verhalen</a></li>
                 <li><a href="/over-mij">over mij</a></li>
-                <li><a href="#archive">contacteren</a></li>
+                <li><a href="#contacteren">contacteren</a></li>
             </ul>
         </nav>
     </div>
@@ -28,8 +28,8 @@
 <main>
     <div class="container2">
         <article>
-            <h2>introductie</h2>
-            <p>welkom op mijn website. op mijn website kan je meerdere verhalen vinden die veel vertrellen over verschillende onderwerpen, wat er gaande is in amerika,ukraine of rusland. denk ook bijvoorbeeld aan isreal en wat die oorlog voor impact heeft op europa en eigenlijk ook de wereld.</p>
+            <h2>Over mij</h2>
+            <p>Mijn naam is huib van der Gronde. Ik heb erg veel intresse in het onderzoeken wat er allemaal in de buiten wereld gebeurt. Maar daarbij vind ik het ook altijd belangerijk dat de informatie ook allemaal klopt en niet een propoganda nieuwsbericht is. Mijn doel is om met deze blog relevante en accurate niewsberichten te samenvatten in een blog.</p>
         </article>
     </div>
 </main>
