@@ -15,7 +15,7 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="/">Dashboard</a></li>
                 <li><a href="/verhalen">verhalen</a></li>
                 <li><a href="/over-mij">over mij</a></li>
                 <li><a href="#archive">contacteren</a></li>
