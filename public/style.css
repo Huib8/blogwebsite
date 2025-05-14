@@ -127,3 +127,8 @@ footer p {
     display: flex;
     justify-content: center;
 }
+
+.postTitle {
+    display: flex;
+    justify-content: center;
+}

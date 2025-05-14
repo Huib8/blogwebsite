@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Front Page</title>
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
 <body>
 <header>
@@ -30,9 +30,9 @@
 <!-- Main Content -->
 <main>
     <div class="container">
-        <div class="max-w-3xl mx-auto p-6 bg-white mt-10 shadow rounded">
-            <h1 class="text-3xl font-bold mb-4">{{ $post->title }}</h1>
-            <div class="text-gray-700">
+        <div class="">
+            <h1 class="postTitle">{{ $post->title }}</h1>
+            <div class="">
                 {!! nl2br(e($post->content)) !!}
             </div>
         </div>
