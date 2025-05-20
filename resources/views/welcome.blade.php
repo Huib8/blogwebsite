@@ -17,7 +17,6 @@
             <ul>
                 <li><a href="/verhalen">verhalen</a></li>
                 <li><a href="/over-mij">over mij</a></li>
-                <li><a href="#archive">contacteren</a></li>
             </ul>
         </nav>
     </div>
@@ -32,13 +31,6 @@
         </article>
     </div>
 </main>
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <p>&copy; 2025 My Blog. All rights reserved.</p>
-    </div>
-</footer>
 </body>
 </html>
 </body>

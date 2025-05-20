@@ -17,11 +17,19 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required|max:255',
             'content' => 'required',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
+
+        $imagePath = null;
+
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('uploads', 'public');
+        }
 
         Post::create([
             'title' => $request->input('title'),
             'content' => $request->input('content'),
+            'image_path' => $imagePath,
         ]);
 
         return redirect()->route('post.index')->with('success', 'Post created successfully.');
@@ -42,10 +50,21 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required|max:255',
             'content' => 'required',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         $post = Post::findOrFail($id);
-        $post->update($request->only('title', 'content'));
+        $imagePath = $post->image_path;
+
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('uploads', 'public');
+        }
+
+        $post->update([
+            'title' => $request->input('title'),
+            'content' => $request->input('content'),
+            'image_path' => $imagePath,
+        ]);
 
         return redirect()->route('post.index')->with('success', 'Post updated successfully.');
     }

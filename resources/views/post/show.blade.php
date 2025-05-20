@@ -21,7 +21,6 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/verhalen">verhalen</a></li>
                 <li><a href="/over-mij">over mij</a></li>
-                <li><a href="#archive">contacteren</a></li>
             </ul>
         </nav>
     </div>
@@ -29,21 +28,19 @@
 
 <!-- Main Content -->
 <main>
-    <div class="container">
+    <div class="container-show">
         <div class="">
             <h1 class="postTitle">{{ $post->title }}</h1>
-            <div class="">
+            @if ($post->image_path)
+                <div class="container-3">
+                    <img src="{{ asset('storage/' . $post->image_path) }}" alt="Post Image" class="image-post">
+                </div>
+            @endif
+            <div style="margin-top: 4vh">
                 {!! nl2br(e($post->content)) !!}
             </div>
         </div>
     </div>
 </main>
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <p>&copy; 2025 Mijn Blog. Alle rechten voorbehouden.</p>
-    </div>
-</footer>
 </body>
 </html>

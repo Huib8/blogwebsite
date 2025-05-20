@@ -132,3 +132,26 @@ footer p {
     display: flex;
     justify-content: center;
 }
+
+.image-post {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.container-show {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+
+}
