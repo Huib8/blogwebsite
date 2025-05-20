@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog Front Page</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{{ asset('style.css') }}">
 <body>
 <header>
     <div class="container">
@@ -27,11 +27,10 @@
 <main>
     <div class="container2">
         <article>
-            <h2>Over mij</h2>
-            <p>Mijn naam is huib van der Gronde. Ik heb erg veel intresse in het onderzoeken wat er allemaal in de buiten wereld gebeurt. Maar daarbij vind ik het ook altijd belangerijk dat de informatie ook allemaal klopt en niet een propoganda nieuwsbericht is. Mijn doel is om met deze blog relevante en accurate niewsberichten te samenvatten in een blog.</p>
+            <h2>{{ $overmijContent->title ?? 'Introductie' }}</h2>
+            <p>{{ $overmijContent->content ?? 'Welkom op mijn website...' }}</p>
         </article>
     </div>
 </main>
 </body>
 </html>
-</body>

@@ -16,6 +16,12 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('post.index') }}">Posts</x-nav-link>
+                    <x-nav-link :href="route('home.edit')" :active="request()->routeIs('home.edit')">
+                        Hoofdpagina
+                    </x-nav-link>
+                    <x-nav-link :href="route('overmij.edit')" :active="request()->routeIs('overmij.edit')">
+                        Overmij
+                    </x-nav-link>
                 </div>
             </div>
 
