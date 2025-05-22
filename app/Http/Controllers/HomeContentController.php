@@ -23,6 +23,6 @@ class HomeContentController extends Controller
         $content = HomeContent::first();
         $content->update($request->only('title', 'content'));
 
-        return redirect()->route('home.edit')->with('success', 'Over mij updated.');
+        return redirect()->route('home.edit')->with('success', 'Over mij is aangepast!.');
     }
 }

@@ -32,7 +32,7 @@ class PostController extends Controller
             'image_path' => $imagePath,
         ]);
 
-        return redirect()->route('post.index')->with('success', 'Post created successfully.');
+        return redirect()->route('post.index')->with('success', 'Post is aangemaakt!');
     }
     public function create()
     {
@@ -66,7 +66,7 @@ class PostController extends Controller
             'image_path' => $imagePath,
         ]);
 
-        return redirect()->route('post.index')->with('success', 'Post updated successfully.');
+        return redirect()->route('post.index')->with('success', 'Post is geupdate');
     }
     public function show($id)
     {
@@ -79,6 +79,6 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
         $post->delete();
 
-        return redirect()->route('post.index')->with('success', 'Post deleted.');
+        return redirect()->route('post.index')->with('success', 'Post is verwijderd.');
     }
 }

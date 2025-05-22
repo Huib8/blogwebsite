@@ -23,6 +23,6 @@ class OvermijContentController extends Controller
         $content = OvermijContent::first();
         $content->update($request->only('title', 'content'));
 
-        return redirect()->route('overmij.edit')->with('success', 'Home page updated.');
+        return redirect()->route('overmij.edit')->with('success', 'Home pagina is aangepast!.');
     }
 }
